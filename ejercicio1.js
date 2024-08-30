@@ -21,4 +21,13 @@ const movies = [
   }
 ]
 
-sdkjghkfjd
+const section = []
+
+for (const movie of movies) {
+  for (const category of movie.categories) {
+    if (!section.includes(category)) {
+      section.push(category)
+    }
+  }
+}
+console.log(section)
