@@ -45,4 +45,7 @@ for (const user of users) {
   }
 }
 
-console.log(favoriteSongs)
+console.log(
+  'Total amount of times these songs have been added to favorite: ',
+  favoriteSongs
+)
