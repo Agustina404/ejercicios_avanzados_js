@@ -7,6 +7,14 @@ function findArrayIndex(array, text) {
   return -1
 }
 
+function removeItems(array, text) {
+  const index = findArrayIndex(array, text)
+  if (index !== -1) {
+    array.splice(index, 1)
+  }
+  return array
+}
+
 const mainCharacters = [
   'Luke',
   'Leia',
@@ -17,4 +25,6 @@ const mainCharacters = [
   'Obi-Wan'
 ]
 
-console.log(findArrayIndex(mainCharacters, 'Rey'))
+console.log(removeItems(mainCharacters, 'Rey'))
+
+console.log(findArrayIndex(mainCharacters, 'Anakin'))
